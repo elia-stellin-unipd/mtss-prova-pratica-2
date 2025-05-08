@@ -1,0 +1,5 @@
+# Ignorare cartella di build
+target/
+
+# Cartella vscode
+.vscode/
