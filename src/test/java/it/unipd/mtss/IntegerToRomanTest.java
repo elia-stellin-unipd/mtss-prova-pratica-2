@@ -18,4 +18,12 @@ public class IntegerToRomanTest {
         assertEquals(converter.convert(3), "III");
         assertEquals(converter.convert(0), null);
     }
+
+    @Test
+    public void TestNumeri_4_6() {
+        IntegerToRoman converter = new IntegerToRoman();
+        assertEquals(converter.convert(4), "IV");
+        assertEquals(converter.convert(5), "V");
+        assertEquals(converter.convert(6), "VI");
+    }
 }
