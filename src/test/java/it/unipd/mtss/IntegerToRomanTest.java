@@ -13,7 +13,7 @@ public class IntegerToRomanTest {
     @Test
     public void TestNumeri_OutOfBounds() {
         assertEquals(IntegerToRoman.convert(0), null);
-        assertEquals(IntegerToRoman.convert(21), null);
+        assertEquals(IntegerToRoman.convert(51), null);
     }
 
     @Test
@@ -48,5 +48,17 @@ public class IntegerToRomanTest {
         assertEquals(IntegerToRoman.convert(18), "XVIII");
         assertEquals(IntegerToRoman.convert(19), "XIX");
         assertEquals(IntegerToRoman.convert(20), "XX");
+    }
+
+    @Test public void TestNumeri_21_50() {
+        assertEquals(IntegerToRoman.convert(21), "XXI");
+        assertEquals(IntegerToRoman.convert(29), "XXIX");
+        assertEquals(IntegerToRoman.convert(30), "XXX");
+        assertEquals(IntegerToRoman.convert(35), "XXXV");
+        assertEquals(IntegerToRoman.convert(39), "XXXIX");
+        assertEquals(IntegerToRoman.convert(40), "XL");
+        assertEquals(IntegerToRoman.convert(47), "XLVII");
+        assertEquals(IntegerToRoman.convert(49), "XLIX");
+        assertEquals(IntegerToRoman.convert(50), "L");
     }
 }

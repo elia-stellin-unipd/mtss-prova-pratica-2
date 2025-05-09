@@ -8,10 +8,10 @@ public class IntegerToRoman {
 
     public static String convert(int number) {
 
-        String[] chars = {"X", "IX", "V", "IV", "I"};
-        int[] values = {10, 9, 5, 4, 1};
+        String[] chars = {"L", "XL", "X", "IX", "V", "IV", "I"};
+        int[] values =   {50,  40,   10,  9,    5,   4,    1};
 
-        if(number > 20 || number < values[values.length-1]) {
+        if(number > 50 || number < values[values.length-1]) {
             return null;
         }
 
@@ -25,4 +25,5 @@ public class IntegerToRoman {
         }
         return res.toString();
     }
+
 }
