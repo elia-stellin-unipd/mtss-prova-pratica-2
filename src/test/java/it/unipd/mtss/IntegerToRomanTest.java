@@ -12,6 +12,7 @@ public class IntegerToRomanTest {
 
     @Test
     public void TestNumeri_OutOfBounds() {
+        assertEquals(IntegerToRoman.convert(-1),null);
         assertEquals(IntegerToRoman.convert(0), null);
         assertEquals(IntegerToRoman.convert(1001), null);
     }
