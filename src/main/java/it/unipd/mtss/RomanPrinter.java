@@ -4,7 +4,6 @@
 ////////////////////////////////////////////////////////////////////
 package it.unipd.mtss;
 
-import java.util.HashMap;
 import java.util.Map;
 
 public class RomanPrinter {
