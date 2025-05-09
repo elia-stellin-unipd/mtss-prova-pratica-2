@@ -13,7 +13,7 @@ public class IntegerToRomanTest {
     @Test
     public void TestNumeri_OutOfBounds() {
         assertEquals(IntegerToRoman.convert(0), null);
-        assertEquals(IntegerToRoman.convert(501), null);
+        assertEquals(IntegerToRoman.convert(1001), null);
     }
 
     @Test
@@ -80,5 +80,18 @@ public class IntegerToRomanTest {
         assertEquals(IntegerToRoman.convert(486),"CDLXXXVI");
         assertEquals(IntegerToRoman.convert(499),"CDXCIX");
         assertEquals(IntegerToRoman.convert(500),"D");
+    }
+
+    @Test
+    public void TestNumeri_501_1000() {
+        assertEquals(IntegerToRoman.convert(501), "DI");
+        assertEquals(IntegerToRoman.convert(600), "DC");
+        assertEquals(IntegerToRoman.convert(700), "DCC");
+        assertEquals(IntegerToRoman.convert(800), "DCCC");
+        assertEquals(IntegerToRoman.convert(890), "DCCCXC");
+        assertEquals(IntegerToRoman.convert(900), "CM");
+        assertEquals(IntegerToRoman.convert(980), "CMLXXX");
+        assertEquals(IntegerToRoman.convert(999), "CMXCIX");
+        assertEquals(IntegerToRoman.convert(1000), "M");
     }
 }
